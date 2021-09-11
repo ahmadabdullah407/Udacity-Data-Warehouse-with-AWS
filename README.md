@@ -57,10 +57,7 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 Using the song and log datasets, I created a star schema optimized for queries on song play analysis.This star schema has 1  _fact_  table (songplays), and 4  _dimension_  tables (users, songs, artists, time). 
 
 [![](https://github.com/kenhanscombe/project-postgres/raw/master/sparkify_erd.png?raw=true)](https://github.com/kenhanscombe/project-postgres/blob/master/sparkify_erd.png?raw=true)
-## Project Template:
-    
-7.  **`song_library`**  includes user names for a given song.
-## Project Template:
+
 ## Project Template:
 Files used on the project:
 
@@ -70,7 +67,7 @@ Files used on the project:
 -  **etl.py**  loads data from S3 into staging tables on Redshift and then process that data into analytics tables on Redshift.
 -  **README.md**  current file, provides discussion on my project.
 - **Execution.ipynb**  To execute *create_tables.py* and  *etl.py*.
--  **creating_cluster.ipynb** Creates a new IAM role and Redshift cluster on AWS.
+-  **creating_cluster.ipynb** Creates a new IAM role and Redshift cluster on AWS.However I removed this file because it contained information about my AWS account.
 ## Steps Followed:
 1. I wrote DROP, CREATE, COPY and INSERT query statements in *sql_queries.py*.
 2.  I  launched a redshift cluster and create an IAM role that has read access to S3.
